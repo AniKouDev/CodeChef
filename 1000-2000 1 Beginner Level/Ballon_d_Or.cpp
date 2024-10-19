@@ -9,17 +9,17 @@ int main(){
     while(t--){
         int n;
         cin >> n;
-        int count = 0;
+        int count2 = 0;
         for(int i = 0; i < n; i++){
             int k;
             cin >> k;
-            if(k%2 != 0)
-                count++;
+            if(k==2)
+                count2++;
         }
-        if(count%2 != 0 && n>1)
-            cout << 2;
+        if(count2%8 == 0)
+            cout << "Yes";
         else
-            cout << 1;
+            cout << "No";
         breakline;
     }
 }

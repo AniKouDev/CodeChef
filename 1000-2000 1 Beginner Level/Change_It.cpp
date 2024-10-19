@@ -9,17 +9,15 @@ int main(){
     while(t--){
         int n;
         cin >> n;
-        int count = 0;
+        int arr[101]={0}, max = 0;
         for(int i = 0; i < n; i++){
             int k;
             cin >> k;
-            if(k%2 != 0)
-                count++;
+            arr[k]++;
+            if(max < arr[k])
+                max = arr[k];
         }
-        if(count%2 != 0 && n>1)
-            cout << 2;
-        else
-            cout << 1;
+        cout << n - max;
         breakline;
     }
 }

@@ -9,17 +9,13 @@ int main(){
     while(t--){
         int n;
         cin >> n;
-        int count = 0;
+        int sum = 0;
         for(int i = 0; i < n; i++){
             int k;
             cin >> k;
-            if(k%2 != 0)
-                count++;
+            sum += k;
         }
-        if(count%2 != 0 && n>1)
-            cout << 2;
-        else
-            cout << 1;
+        cout << ((sum%2 == 0)?"No":"Yes");
         breakline;
     }
 }
