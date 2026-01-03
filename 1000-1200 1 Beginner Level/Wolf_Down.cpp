@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    int t;
+    cin >> t;
+    while(t--){
+        int n;
+        cin >> n;
+        string s;
+        cin >> s;
+        int count0 = 0;
+        for(int i = 0; i < n; i++){
+            if(s[i] == '1')
+                break;
+            count0++;
+        }
+        cout << count0 << endl;
+    }
+}
